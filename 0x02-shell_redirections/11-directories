@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -mindeth 1 -type d | wc -l
