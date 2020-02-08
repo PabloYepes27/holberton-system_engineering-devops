@@ -1,7 +1,5 @@
 # What is this project about?
 
-### What does RTFM mean?
-### What is a Shebang
 
 ## What is the Shell
 
