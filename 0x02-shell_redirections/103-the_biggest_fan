@@ -1,10 +1,2 @@
 #!/bin/bash
 cut -f 1 | sort | uniq -c | sort -nr | rev | cut -d " " -f 1 | rev | head -n 11
-# to cut the  first field that is the hostname 
-# to sort the hostnames
-# agrup te equals names and show the number of apperances
-# sort the appearances in numerical order and reverse the order to show us the largest
-# reverse the rows
-# cutting the new column of appearances to show only the hostnames again
-# reverse back the rows to show the hostnames in order
-# print the first 11 whichs are the 11th with more appearances
