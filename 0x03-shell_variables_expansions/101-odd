@@ -1,2 +1,2 @@
 #!/bin/bash
-xargs -n 2 | cut -d " " -f1 | sort
+xargs -n2 | cut -d ' ' -f1
