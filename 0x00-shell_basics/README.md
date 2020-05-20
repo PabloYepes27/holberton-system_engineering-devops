@@ -18,16 +18,23 @@ Read or watch:
 What you should learn from this project:
 
 
-<details open>
-<summary>What does RTFM mean?</summary>
-<br>
+
+<details><summary>What does RTFM mean?</summary>
+<p>
+
 Read The Fucking Manual
+
+</p>
 </details>
-<details open>
-<summary>What is a Shebang?</summary>
-<br>
+<details><summary>What is a Shebang?</summary>
+<p>
+
 a shebang is the character sequence consisting of the characters number sign and exclamation mark at the beginning of a script
+
+
+</p>
 </details>
+
 
 ---
 
