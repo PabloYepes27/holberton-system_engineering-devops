@@ -17,7 +17,12 @@ Read or watch:
 ## Learning Objectives:bulb:
 What you should learn from this project:
 
-* What does RTFM mean?
+*
+<details open>
+<summary>What does RTFM mean?</summary>
+<br>
+Read The Fucking Manual
+</details>
 * What is a Shebang
 
 ---
