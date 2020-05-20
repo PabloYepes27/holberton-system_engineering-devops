@@ -17,13 +17,17 @@ Read or watch:
 ## Learning Objectives:bulb:
 What you should learn from this project:
 
-*
+
 <details open>
 <summary>What does RTFM mean?</summary>
 <br>
 Read The Fucking Manual
 </details>
-* What is a Shebang
+<details open>
+<summary>What is a Shebang?</summary>
+<br>
+a shebang is the character sequence consisting of the characters number sign and exclamation mark at the beginning of a script
+</details>
 
 ---
 
