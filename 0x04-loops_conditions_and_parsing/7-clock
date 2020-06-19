@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-# This script loops from 1 to 20 displaying
-# "4" and then "bad luck from China" for the 4th iteration
-# "9" and then "bad luck from Japan" for the 4th iteration
-# "17" and then "bad luck from Italy" for the 4th iteration
+# script that displays the time for 12 hours and 59 minutes:
+# display hours from 0 to 12
+# display minutes from 1 to 59
 hr="0"
 i="1"
 
