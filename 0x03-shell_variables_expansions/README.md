@@ -2,12 +2,12 @@
 
 ## Resources:books:
 Read or watch:
-* [Expansions](https://intranet.hbtn.io/rltoken/G5p7gU70olYFxbN_DfuXpQ)
-* [Shell Arithmetic](https://intranet.hbtn.io/rltoken/C2JAWjeSMt5I0EmuplF32A)
-* [Variables](https://intranet.hbtn.io/rltoken/Wyjo7ryCl3xnWkeb1YnZBA)
-* [Shell initialization files](https://intranet.hbtn.io/rltoken/4YAvO7v4j2N3Mt6SsGfJPA)
-* [The alias Command](https://intranet.hbtn.io/rltoken/5JiNabFuBFXpJKqGGh9EjQ)
-* [Technical Writing](https://intranet.hbtn.io/rltoken/yG1jmJxtf-0eALGmsrfIjA)
+* [Expansions](http://linuxcommand.org/lc3_lts0080.php)
+* [Shell Arithmetic](https://www.gnu.org/software/bash/manual/html_node/Shell-Arithmetic.html)
+* [Variables](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_02.html)
+* [Shell initialization files](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_01.html)
+* [The alias Command](http://www.linfo.org/alias.html)
+* [Technical Writing](https://students-support.hbtn.io/hc/en-us/restricted?return_to=https%3A%2F%2Fstudents-support.hbtn.io%2Fhc%2Fen-us%2Farticles%2F360023750254)
 
 ---
 ## Learning Objectives:bulb:
