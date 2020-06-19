@@ -5,7 +5,7 @@
 hr="0"
 i="1"
 
-while [ $hr -lt 12 ]
+while [ $hr -lt 13 ]
 do
 	echo "Hour: $hr"
 	while [ $i -lt 60 ]
