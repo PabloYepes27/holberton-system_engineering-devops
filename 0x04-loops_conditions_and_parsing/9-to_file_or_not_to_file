@@ -6,11 +6,11 @@ FILE="holbertonschool"
 if [ -e "$FILE" ]
 then
 	echo "holbertonschool file exists"
-	if [ -s "$FILE" ]
+	if [ !-s "$FILE" ]
 	then
-		echo "holbertonschool file is not empty"
-	else
 		echo "holbertonschool file is empty"
+	else
+		echo "holbertonschool file is not empty"
 	fi
 	if [ -f "$FILE" ]
 	then
