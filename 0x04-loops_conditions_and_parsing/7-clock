@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# This script loops from 1 to 20 displaying
+# "4" and then "bad luck from China" for the 4th iteration
+# "9" and then "bad luck from Japan" for the 4th iteration
+# "17" and then "bad luck from Italy" for the 4th iteration
+hr="0"
+i="1"
+
+while [ $hr -lt 12 ]
+do
+	echo "Hour: $hr"
+	while [ $i -lt 60 ]
+	do	
+		echo "$i"
+		i=$((i+1))
+	done
+	i="1"
+	hr=$((hr+1))
+done
