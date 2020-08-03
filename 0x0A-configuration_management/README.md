@@ -46,22 +46,7 @@ Follow the following instructions to get a copy of the program and run in your l
 ```
 https://github.com/PabloYepes27/holbertonschool-low_level_programming/0x1C-makefiles.git
 ```
- 
-* Compile it with GCC
-```
-gcc -Wall -Werror -Wextra -pedantic -g *.c -o holberton
-```
- 
-* Run the program
-```
-./holberton
-```
- 
-* Run with debugger
-```
-valgrind --leak-check=full --show-leak-kinds=all ./holberton
-```
----
+
  
 ## Tasks:clipboard:
  
