@@ -28,13 +28,7 @@ As a broader subject, configuration management (CM) refers to the process of sys
 ---
  
 ## General Objectives:bulb:
- 
-* What are make, Makefiles
-* When, why and how to use Makefiles
-* What are rules and how to set and use them
-* What are explicit and implicit rules
-* What are the most common / useful rules
-* What are variables and how to set and use them
+
  
 ---
  
@@ -44,7 +38,7 @@ Follow the following instructions to get a copy of the program and run in your l
  
 * Clone the following repository.
 ```
-https://github.com/PabloYepes27/holbertonschool-low_level_programming/0x1C-makefiles.git
+https://github.com/PabloYepes27/holberton-system_engineering-devops.git
 ```
 
  
