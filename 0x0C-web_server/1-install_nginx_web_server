@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# write a Bash script that configures a new Ubuntu machine nginx
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo ufw allow  'Nginx HTTP' #nginx should be listed on port 80
+sudo service nginx restart
