@@ -1,6 +1,6 @@
-# 0x1C. C - Makefiles
+# 0x0F. Load balancer
  
-<gif  width="520"  alt="image"  src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/273/giphy-2.gif">
+<gif  width="520"  alt="image"  src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/275/qfdked8.png">
  
 ## Contents:open_file_folder:
  
@@ -24,18 +24,19 @@
  
 ## Project Description:newspaper:
  
-This is one of the last projects of the low level programming in the second quarter about makefiles, in this project you going to see what is and how to use the command "make"; also When, why and how to use Makefiles.
+You have been given 2 additional servers:
+
+gc-[STUDENT_ID]-web-02-XXXXXXXXXX
+gc-[STUDENT_ID]-lb-01-XXXXXXXXXX
+Let’s improve our web stack so that there is redundancy for our web servers. This will allow us to be able to accept more traffic by doubling the number of web servers, and to make our infrastructure more reliable. If one web server fails, we will still have a second one to handle requests.
+
+For this project, you will need to write Bash scripts to automate your work. All scripts must be designed to configure a brand new Ubuntu server to match the task requirements.
  
 ---
  
 ## General Objectives:bulb:
  
-* What are make, Makefiles
-* When, why and how to use Makefiles
-* What are rules and how to set and use them
-* What are explicit and implicit rules
-* What are the most common / useful rules
-* What are variables and how to set and use them
+
  
 ---
  
@@ -45,66 +46,40 @@ Follow the following instructions to get a copy of the program and run in your l
  
 * Clone the following repository.
 ```
-https://github.com/PabloYepes27/holbertonschool-low_level_programming/0x1C-makefiles.git
+https://github.com/PabloYepes27/holberton-system_engineering-devops.git
 ```
- 
-* Compile it with GCC
-```
-gcc -Wall -Werror -Wextra -pedantic -g *.c -o holberton
-```
- 
-* Run the program
-```
-./holberton
-```
- 
-* Run with debugger
-```
-valgrind --leak-check=full --show-leak-kinds=all ./holberton
-```
+
 ---
  
 ## Tasks:clipboard:
  
-### [0. make -f 0-Makefile](./0-Makefile)
-* Create your first Makefile.
+### [0. Double the number of webservers ]
+* Configure Nginx so that its HTTP response contains a custom header (on web-01 and web-02
  
  
-### [1. make -f 1-Makefile](./1-Makefile)
-* Requirements:
+### [1. Install your load balancer]
+* Install and configure HAproxy on your lb-01 server.
  
  
-### [2. make -f 2-Makefile](./2-Makefile)
-* Create your first useful Makefile.
- 
- 
-### [3. make -f 3-Makefile](./3-Makefile)
-* Requirements:
- 
- 
-### [4. A complete Makefile](./4-Makefile)
-* Requirements:
- 
- 
-### [5. Island Perimeter](./5-island_perimeter.py)
-* Technical interview preparation: 
- 
- 
-### [6. make -f 100-Makefile](./100-Makefile)
-* Requirements:
+### [2. Add a custom HTTP header with Puppet]
+* Just as in task #0, we’d like you to automate the task of creating a custom HTTP header response, but with Puppet.
  
 ---
  
 ## Built with:hammer:
- 
+
+-	Puppets
+-	nginx
+-	HAproxy
+-	Shell script
  
 ---
  
 ## Resources:books:
  
 Read or watch:
-* [What is a Makefile and how does it work?](https://opensource.com/article/18/8/what-how-makefile)
-* [A Simple Makefile Tutorial](https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
+* [Load Balancer](https://intranet.hbtn.io/concepts/46)
+* [Web stack debugging](https://intranet.hbtn.io/concepts/68)
  
 ---
  
