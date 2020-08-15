@@ -1,21 +1,9 @@
 #!/usr/bin/env bash
 # This script configures Haproxy load balancer in a server.
 
-apt-get update -y
-apt-get install haproxy=1.6.\* -y
-
-text="
-frontend jp_front_server
-    bind *:80
-    mode http
-    default_backend jp_back_server
-    
-backend jp_back_server
-    balance roundrobin
-    option forwardfor
-    server 1452-web-01 34.73.169.245:80 check
-    server 1452-web-02 35.231.18.60:80 check
-    "
-sed -i "18i $text" /etc/haproxy/haproxy.cfg
-
+apt-get -y update
+apt-get install -y haproxy=1.6.*
+frontend_configuration="frontend http\n\tbind *:80\n\tmode http\n\tdefault_backend juan-web-backend\n"
+backend_configuration="backend juan-web-backend\n\tbalance roundrobin\n\tmode http\n\tserver web-01 34.73.169.245:80 check\n\tserver web-02 35.231.18.60:80 check"
+sed -i "20i \\\n$frontend_configuration\n$backend_configuration" /etc/haproxy/haproxy.cfg
 sudo service haproxy restart
