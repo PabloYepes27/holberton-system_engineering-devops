@@ -4,7 +4,6 @@
 apt-get update -y
 apt-get install haproxy=1.6.\* -y
 
-config_file="/etc/haproxy/haproxy.cfg"
 text="
 frontend jp_front_server
     bind *:80
@@ -17,7 +16,6 @@ backend jp_back_server
     server 1452-web-01 34.73.169.245:80 check
     server 1452-web-02 35.231.18.60:80 check
     "
-echo -e "$text" >> "$config_file"
+sed -i "18i $text" /etc/haproxy/haproxy.cfg
 
-
-service haproxy restart
+sudo service haproxy restart
