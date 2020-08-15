@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script configures Nginx so that its HTTP response
+# contains a custom header
+
+apt-get update
+apt-get -y install nginx
+
+service nginx start
+
+config_file="/etc/nginx/sites-available/default"
+
+text="server {\n\tadd_header X-Served-By \$hostname;}"
+sed -i "0,/server {/s//$text/" "$config_file"
+
+service nginx restart
