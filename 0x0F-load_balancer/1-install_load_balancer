@@ -2,9 +2,9 @@
 # This script configures Haproxy load balancer in a server.
 
 apt-get install software-properties-common -y
-add-apt-repository ppa:vbernat/haproxy-2.0 -y
+add-apt-repository ppa:vbernat/haproxy-1.6 -y
 apt-get update -y
-apt-get install haproxy=2.0.\* -y
+apt-get install haproxy=1.6.\* -y
 service haproxy start
 
 config_file="/etc/haproxy/haproxy.cfg"
