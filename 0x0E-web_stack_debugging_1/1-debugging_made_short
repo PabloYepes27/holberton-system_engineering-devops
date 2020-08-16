@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#find out what’s keeping your Ubuntu container’s Nginx
+sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+pgrep nginx | xargs kill -1
