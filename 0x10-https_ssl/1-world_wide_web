@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# write a Bash script that will display information about subdomains.
+domain=$1
+SUBDOMAINS="www lb-01 web-01 web-02"
+
+function show_all() {
+    for arg in $SUBDOMAINS
+    do
+        echo -n "The subdomain $arg is a "
+        dig "$arg"."$domain" | grep -A1 'ANSWER SECTION:' | tail -n1 | awk '{print $4 " record and points to " $5}'
+    done
+}
+
+if [ $# -eq 2 ]
+then
+    echo -n "The subdomain $2 is a "
+    dig "$2"."$domain" | grep -A1 'ANSWER SECTION:' | tail -n1 | awk '{print $4 " record and points to " $5}'
+else
+    show_all
+fi
