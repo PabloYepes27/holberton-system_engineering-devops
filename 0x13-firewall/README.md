@@ -84,6 +84,8 @@ Your answer file should be a copy of the ufw configuration file that you modifie
  
 
 * [What is a firewall](https://en.wikipedia.org/wiki/Firewall_%28computing%29)
+* [firewall ufw port redirect](Can I use ufw to setup a port forward?)
+* [How To Setup a Firewall with UFW on an Ubuntu and Debian Cloud Server](https://www.digitalocean.com/community/tutorials/how-to-setup-a-firewall-with-ufw-on-an-ubuntu-and-debian-cloud-server)
 
  
 ---
