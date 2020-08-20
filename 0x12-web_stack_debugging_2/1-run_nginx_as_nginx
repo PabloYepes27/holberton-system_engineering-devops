@@ -12,7 +12,7 @@ sudo chown nginx:nginx /etc/nginx/nginx.conf
 sudo chmod 700 /etc/nginx/nginx.conf
 
 # nginx must be listening on all active IPs on port 8080
-sudo sed -i 's/80 default_server/8080 default_server' /etc/nginx/sites-enabled/default
+sudo sed -i 's/80 default_server/8080 default_server' /etc/nginx/sites-available/default
 
 # restart nginx with the prev config
 sudo -u nginx service nginx start
