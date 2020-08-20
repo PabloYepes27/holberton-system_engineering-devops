@@ -6,13 +6,13 @@
 pkill -f apache2
 
 # change owner and group of ngninx configuraiton file
-sudo chown nginx:nginx /etc/nginx/nginx.conf
+chown nginx:nginx /etc/nginx/nginx.conf
 
 # give all permision for user of nginx config file
-sudo chmod 700 /etc/nginx/nginx.conf
+chmod 700 /etc/nginx/nginx.conf
 
 # nginx must be listening on all active IPs on port 8080
-sudo sed -i 's/80 default_server/8080 default_server' /etc/nginx/sites-available/default
+sed -i 's/80 default_server/8080 default_server/' /etc/nginx/sites-available/default
 
 # restart nginx with the prev config
 sudo -u nginx service nginx start
