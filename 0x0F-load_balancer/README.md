@@ -35,9 +35,17 @@ For this project, you will need to write Bash scripts to automate your work. All
 ---
  
 ## General Objectives:bulb:
- 
 
- 
+* What is load balancer
+* load balancing algortithms
+* How to install
+* What is haproxy
+* How to install haproxy
+* HTTP header
+* Custom HTTP header
+* WHAT  is puppet
+
+
 ---
  
 ## Instalation:wrench:
@@ -80,6 +88,11 @@ https://github.com/PabloYepes27/holberton-system_engineering-devops.git
 Read or watch:
 * [Load Balancer](https://intranet.hbtn.io/concepts/46)
 * [Web stack debugging](https://intranet.hbtn.io/concepts/68)
+* [Intro to Load Balancing for Developers &ndash; The Algorithms](https://devcentral.f5.com/s/articles/intro-to-load-balancing-for-developers-ndash-the-algorithms)
+* [How does Software and Hardware Load Balancer Work?](https://www.thegeekstuff.com/2016/01/load-balancer-intro/)
+* [An Introduction to HAProxy and Load Balancing Concepts](https://www.digitalocean.com/community/tutorials/an-introduction-to-haproxy-and-load-balancing-concepts)
+* [HTTP Headers](https://www.techopedia.com/definition/27178/http-header)
+* [HTTP Headers 101](https://medium.com/@bilalbarki/http-headers-101-5392a7eff87b#.xj9rmyxhp)
  
 ---
  
