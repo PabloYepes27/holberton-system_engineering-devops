@@ -1,5 +1,6 @@
 # 0x14. MySQL
  
+<img width="520"  alt="image"  src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/280/KkrkDHT.png">
  
 ## Contents:open_file_folder:
  
