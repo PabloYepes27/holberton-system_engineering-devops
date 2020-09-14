@@ -14,7 +14,6 @@ if __name__ == "__main__":
 
     # get the employee name by his id
     users = requests.get("https://jsonplaceholder.typicode.com/users").json()
-    # users = json.loads(response_user.text)
     for user in users:
         if user['id'] == int(argv[1]):
             EMPLOYEE_NAME = user['name']
@@ -22,7 +21,6 @@ if __name__ == "__main__":
 
     # get the neccesary information of the todo api
     todos = requests.get("https://jsonplaceholder.typicode.com/todos").json()
-    # todos = json.loads(response_todo.text)
     for todo in todos:
         if todo['userId'] == int(argv[1]):
             if todo['completed'] is True:
