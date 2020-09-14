@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""Write a Python script that, using this REST API,
- for a given employee ID, returns information about
-  his/her to-do list progress."""
+"""Using what you did in the task #0, extend your Python script to export data in the CSV format."""
 import csv
 import requests
 from sys import argv
