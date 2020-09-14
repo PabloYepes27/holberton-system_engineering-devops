@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Write a Python script that, using this REST API,
  for a given employee ID, returns information about
-  his/her TODO list progress."""
+  his/her to-do list progress."""
 import json
 import requests
 from sys import argv
@@ -13,6 +13,7 @@ if __name__ == "__main__":
     TOTAL_NUMBER_OF_TASKS = 0
     TASK_TITLE = []
 
+    # get the employee name by his id
     response_user = requests.get("https://jsonplaceholder.typicode.com/users")
     users = json.loads(response_user.text)
     for user in users:
@@ -20,6 +21,7 @@ if __name__ == "__main__":
             EMPLOYEE_NAME = user['name']
             break
 
+    # get the neccesary information of the todo api
     response_todo = requests.get("https://jsonplaceholder.typicode.com/todos")
     todos = json.loads(response_todo.text)
     for todo in todos:
