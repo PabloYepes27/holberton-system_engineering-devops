@@ -16,7 +16,7 @@ if __name__ == "__main__":
         "https://jsonplaceholder.typicode.com/todos").json()
 
     for user in users:
-        data = {user.get("id"): []}
+        data[user.get("id")] = []
         for todo in todos:
             aux_dict["username"] = user.get("username")
             aux_dict["task"] = todo.get("title")
