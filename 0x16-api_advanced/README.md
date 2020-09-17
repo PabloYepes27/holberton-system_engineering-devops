@@ -75,6 +75,9 @@ https://github.com/PabloYepes27/holberton-system_engineering-devops.git
 
 * [Reddit API Documentation](https://www.reddit.com/dev/api/)
 * [Query String](https://en.wikipedia.org/wiki/Query_string)
+* [How to Sort a Dictionary by Value in Python](https://careerkarma.com/blog/python-sort-a-dictionary-by-value/)
+* [Json Viewer](https://codebeautify.org/jsonviewer)
+* [How to use Reddit API](https://alpscode.com/blog/how-to-use-reddit-api/)
  
 ---
  
