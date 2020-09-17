@@ -6,22 +6,28 @@ subreddit, the function should return None."""
 import requests
 
 
-def recurse(subreddit, hot_list=[]):
+def recurse(subreddit, hot_list=[], after=''):
     """returns a list containing the titles of all hot
     articles for a given subreddit"""
-    if not hot_list:
-        base_url = 'https://www.reddit.com'
-        headers = {'user-agent': 'fake_user_agent'}
+    headers = {'user-agent': 'fake_user_agent'}
+    base_url = 'https://www.reddit.com/r/{}/hot.json?after={}'.format(
+        subreddit, after)
 
-        dict_response = requests.get(
-          base_url + "/r/" + subreddit + "/hot.json",
-          headers=headers,
-          allow_redirects=False).json()
+    response = requests.get(base_url, headers=headers)
 
-        list_posts = dict_response.get('data', {}).get("children", [])
-        if not list_posts:
-            return (None)
-        else:
-            return recurse(subreddit, list_posts)
+    list_posts = response.json().get('data', {}).get("children", [])
+    if list_posts is None:
+        if len(list_posts) == 0:
+            return None
+        return hot_list
     else:
-        return(hot_list)
+        for elem in list_posts:
+            hot_list.append(elem.get('data').get('title'))
+
+    after = response.json().get('data', {}).get('after', None)
+    if after is None:
+        if len(list_posts) == 0:
+            return None
+        return hot_list
+    else:
+        return recurse(subreddit, hot_list, after)
